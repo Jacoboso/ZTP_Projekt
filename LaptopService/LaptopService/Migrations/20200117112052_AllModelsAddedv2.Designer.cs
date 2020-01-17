@@ -3,14 +3,16 @@ using LaptopService.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LaptopService.Migrations
 {
     [DbContext(typeof(LaptopServiceContext))]
-    partial class LaptopServiceContextModelSnapshot : ModelSnapshot
+    [Migration("20200117112052_AllModelsAddedv2")]
+    partial class AllModelsAddedv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

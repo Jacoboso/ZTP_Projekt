@@ -6,10 +6,12 @@ using System.ComponentModel.DataAnnotations;
 
 namespace LaptopService.Models.DbModels
 {
-    public class Company
+    public class HpDB
     {
         [Key]
-        public int id { get; set; }
-        public string Name { get; set; }
+        public int Id { get; set; }
+
+        public string Model { get; set; }
+        public string Price { get; set; }
     }
 }

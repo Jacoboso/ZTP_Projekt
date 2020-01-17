@@ -3,15 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
-
 namespace LaptopService.Models.DbModels
 {
-    public class Hp
+    public class MSIDB
     {
         [Key]
-        public int id { get; set; }
+        public int Id { get; set; }
 
-        public string model { get; set; }
-        public string price { get; set; }
+        public string Model { get; set; }
+        public string Price { get; set; }
     }
 }

@@ -15,13 +15,10 @@ namespace LaptopService.Models
             Database.EnsureCreated();
         }
 
-        public DbSet<LaptopService.Models.DbModels.Person> Person { get; set; }
-        public DbSet<LaptopService.Models.DbModels.Company> Company { get; set; }
-
-        public DbSet<LaptopService.Models.DbModels.Hp> Hp { get; set; }
-        public DbSet<LaptopService.Models.DbModels.Lenovo> Lenovo { get; set; }
-        public DbSet<LaptopService.Models.DbModels.MSI> MSI { get; set; }
-        public DbSet<LaptopService.Models.DbModels.Transaction> Transaction { get; set; }
+        public DbSet<LaptopService.Models.DbModels.HpDB> HpDB { get; set; }
+        public DbSet<LaptopService.Models.DbModels.LenovoDB> LenovoDB { get; set; }
+        public DbSet<LaptopService.Models.DbModels.MSIDB> MSIDB { get; set; }
+        public DbSet<LaptopService.Models.DbModels.TransactionDB> TransactionDB { get; set; }
 
     }
 }
